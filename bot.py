@@ -1,3 +1,5 @@
+import os
+TOKEN = os.getenv('BOT_TOKEN')  # Добавь эту строку в начало!
 import re
 import logging
 from telegram import Update
@@ -314,4 +316,5 @@ def main():
         logger.error(f"Ошибка при запуске бота: {e}")
 
 if __name__ == '__main__':
+
     main()  
